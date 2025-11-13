@@ -11,6 +11,7 @@ export default [
   {
     ignores: [
       '.idea/',
+      '.pnpm-store/',
       'coverage/',
       'draft.js',
       'lib/',
