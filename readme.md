@@ -185,6 +185,10 @@ module.exports = {
 };
 ```
 
+## Node 22.12+ and ESM configs
+
+Node 22.12 turned on `require()` support for ESM by default. If your config is an `.mjs` file with a default export, `@shelf/jest-mongodb` now imports it automatically (and still supports CommonJS configs). If you prefer the old behavior, you can run Jest with `--no-experimental-require-module`.
+
 ## See Also
 
 - [jest-dynamodb](https://github.com/shelfio/jest-dynamodb)
